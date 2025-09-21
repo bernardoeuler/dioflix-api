@@ -8,7 +8,7 @@ from azure.functions import AuthLevel, FunctionApp, HttpRequest, HttpResponse, O
 from azure.storage.blob import PublicAccess
 from azure.storage.blob.aio import ContainerClient
 
-app = FunctionApp(http_auth_level=AuthLevel.FUNCTION)
+app = FunctionApp(http_auth_level=AuthLevel.ANONYMOUS)
 
 @app.route(route="upload", methods=[HttpMethod.POST])
 async def fnPostDataStorage(req: HttpRequest) -> HttpResponse:
