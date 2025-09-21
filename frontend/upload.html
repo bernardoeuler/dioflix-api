@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DioFlix - Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DioFlix</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Upload de Filme</h2>
+    <form id="upload-form">
+      <input type="text" placeholder="Título" id="title" required>
+      <input type="number" placeholder="Ano" id="year" required>
+      <input type="file" id="thumb" accept="image/*" required>
+      <input type="file" id="video" accept="video/*" required>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="message"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
